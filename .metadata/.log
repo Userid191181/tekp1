@@ -253,3 +253,26 @@ java -ea -classpath C:\Users\DELL\eclipse\java-2025-09\eclipse\configuration\org
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 52094 -protocol json -d C:\Users\DELL\git\repository2\MavenProject\test-output C:\Users\DELL\AppData\Local\Temp\testng-eclipse--562323003\testng-customsuite.xml
 java -ea -classpath C:\Users\DELL\eclipse\java-2025-09\eclipse\configuration\org.eclipse.osgi\533\0\.cp\lib\testng-remote.jar:C:\Users\DELL\git\repository2\MavenProject\target\test-classes:C:\Users\DELL\git\repository2\MavenProject\target\classes:C:\Users\DELL\git\repository2\MavenProject\SeleniumJarFiles\selenium-server-4.27.0.jar:C:\Users\DELL\.p2\pool\plugins\org.testng_7.11.0.r202503091654.jar:C:\Users\DELL\.p2\pool\plugins\com.beust.jcommander_1.83.0.jar:C:\Users\DELL\.p2\pool\plugins\slf4j.api_2.0.17.jar:C:\Users\DELL\.p2\pool\plugins\org.yaml.snakeyaml_2.2.0.jar:C:\Users\DELL\.p2\pool\plugins\org.webjars.jquery_3.7.1.jar:D:\OLDDATA\BackUPCDrive\SELENIUM\TEKPyramid\SeleniumGrid\selenium-server-4.38.0.jar:C:\Users\DELL\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar:C:\Users\DELL\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar:C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar:C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar:C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar:C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar:C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar:C:\Users\DELL\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar:C:\Users\DELL\.m2\repository\junit\junit\4.10\junit-4.10.jar:C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar:C:\Users\DELL\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar:C:\Users\DELL\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar:C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar:C:\Users\DELL\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar:C:\Users\DELL\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar:C:\Users\DELL\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar:C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar:C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar:C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar:C:\Users\DELL\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar:C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar:C:\Users\DELL\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar:C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar:C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar:C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar org.testng.remote.RemoteTestNG -serport 52094 -protocol json -d C:\Users\DELL\git\repository2\MavenProject\test-output C:\Users\DELL\AppData\Local\Temp\testng-eclipse--562323003\testng-customsuite.xml
+!SESSION 2025-12-01 16:14:55.540 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-01 16:14:57.968
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-12-01 16:14:58.259
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (276) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-01 16:15:00.038
+!MESSAGE Logback config file: C:\Users\DELL\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-12-01 16:15:09.650
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DELL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
