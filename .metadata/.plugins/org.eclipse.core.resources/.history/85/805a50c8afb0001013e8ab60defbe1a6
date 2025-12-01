@@ -1,0 +1,109 @@
+package com.crm.ContactTest;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import com.comcat.crm.objectrepositoryutility.ContatcsHomePage;
+import com.comcat.crm.objectrepositoryutility.ContatctInfoPage;
+import com.comcat.crm.objectrepositoryutility.CreateNewContactPage;
+import com.comcat.crm.objectrepositoryutility.HomePage;
+import com.crm.generic.FileUtility.ExcelFileUtility;
+import com.crm.generic.WebDriverUtility.JavaUtility;
+import com.crm.generic.baseUtility.BaseClassTest;
+
+public class CreateContactTest extends BaseClassTest {
+@Test
+	public void  CreateContactTest() throws EncryptedDocumentException, IOException{
+		ExcelFileUtility eLib = new ExcelFileUtility();
+		String contactLastname = eLib.getDataFromExcel("contact", 1, 2);
+		// Open Browser also coming from BaseClassTest
+		// login to application also coming from BaseClassTest
+
+		HomePage hp = new HomePage(driver);		
+		hp.getContactsLink().click();
+		// navigate to Contact module
+		ContatcsHomePage conhomep = new ContatcsHomePage(driver);
+		conhomep.getCreateContactBtn().click();
+
+		CreateNewContactPage creaConp = new CreateNewContactPage(driver);
+		creaConp.getLastNameEdit().sendKeys(contactLastname);
+		creaConp.getSaveBtn().click();
+
+		// verify the Contact number
+		ContatctInfoPage coninfop = new ContatctInfoPage(driver);
+		String headerContactName = coninfop.getHeaderContactname().getText();
+		if (headerContactName.contains(contactLastname)) {
+			System.out.println(headerContactName + " is present in Contact Header");
+		} else {
+			System.out.println(headerContactName + " is NOT present in Contact Header");
+		}
+
+		String connumField = coninfop.getLastNameAfterSave().getText();
+
+		if (contactLastname.equals(connumField)) {
+			System.out.println(connumField + " is present in the Contact Last Name filed");
+		} else {
+			System.out.println("Contact Last Name is not be present");
+		}		
+	}
+
+
+@Test
+public void CreateContactWithSupportDateTest() throws EncryptedDocumentException, IOException
+{
+	JavaUtility jLib=new JavaUtility();
+	ExcelFileUtility eLib=new ExcelFileUtility();
+	// Reading data from Properties File (common data)			
+	
+	// Reading data from Excel (Testcase specific data)
+	String contactname=eLib.getDataFromExcel("contact", 4, 2);
+	
+	//Open Browser
+	//login to application
+	
+	//Reading dates from JavaUtility
+	String startdate=jLib.getSystemDateyyyymmdd();
+	String enddate=jLib.getReqDateyyyymmdd(30);			
+	
+	HomePage hp = new HomePage(driver);		
+	hp.getContactsLink().click();
+	// navigate to Contact module
+	
+	ContatcsHomePage conhomep = new ContatcsHomePage(driver);
+	conhomep.getCreateContactBtn().click();
+	CreateNewContactPage creaConp = new CreateNewContactPage(driver);
+	creaConp.getLastNameEdit().sendKeys(contactname);
+	creaConp.getSupstrDate().clear();
+	creaConp.getSupstrDate().sendKeys(startdate);
+	creaConp.getSupendDate().clear();
+	creaConp.getSupendDate().sendKeys(enddate);
+	creaConp.getSaveBtn().click();			
+	WebElement stdt=creaConp.getActsupstrDateAfterSave();
+	String stdt1=stdt.getText();
+
+	WebElement eddt=creaConp.getActsupendDateAfterSave();
+	String eddt1=eddt.getText();
+	if(stdt1.equals(startdate)) {
+		System.out.println("StartDate " +startdate+ " date is present ");
+	}
+	else {
+		System.out.println("StartDate date is NOT present ");
+	}
+	if(eddt1.equals(enddate)) {
+		System.out.println("EndDate "+ enddate + " date is present ");
+	}
+	else {
+		System.out.println("EndDate date is NOT present ");
+	}	
+					
+}
+
+@Test
+public void CreateContactWithOrgTest()
+{
+	
+	
+}
+}

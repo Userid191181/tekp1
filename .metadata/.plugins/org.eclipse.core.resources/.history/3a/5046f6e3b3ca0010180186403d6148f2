@@ -1,0 +1,14 @@
+package SeleniumGrid;
+
+import org.testng.annotations.Test;
+
+public class SelGri1 {
+
+	@Test
+	public void SelGrid()
+	{
+		WebDriver driver=new Chrome();
+		System.out.println("Selenium grid program");
+	}
+
+}

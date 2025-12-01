@@ -1,0 +1,29 @@
+package Test;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+
+public class JDBC_1 {
+
+	public static void main(String[] args) throws SQLException {
+//		Step1: load/register db driver
+//		We have class called DriverManager, it is coming from java.sql package
+		Driver driverref=new Driver();
+		DriverManager.registerDriver(driverref); //Registration is Done. registerDriver is a static method.
+		//To connect to mySQLDB, we nned to load or Register the Driver, the driver is mysqlDriver 
+//	Step2: connect to db
+		DriverManager.getConnection("JDBC:mysql://localhost:3307/ninza_hrm", "root@%", "root"); //Again we use DriverManager to get connection. getConnection is alos static method available in DriverManager class.
+		//Whenever we use getConnection method it asks for URL:
+		//This getConnection has 3 args getConnection("url", "username", "password")
+		//to provide url info,  we need to know in below syntax.
+		//Syntax: Starts with "JDBC:mysql://localhost:port/projects"
+//	Step3: create sql statement 
+//	Step4: execute select query and get result
+//	Step5: close the connection
+
+
+	}
+
+}

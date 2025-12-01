@@ -1,0 +1,17 @@
+package src;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class Scanner1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int g=sc.nextInt();
+		
+		System.out.println(g);
+		
+
+	}
+
+}

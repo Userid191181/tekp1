@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="UtilityClassObject"/>
+			<item value="Utility"/>
+			<item value="report.fl"/>
+			<item value="soft"/>
+			<item value="@class=&apos;lvtHeaderText&apos;"/>
+			<item value="[@class=&apos;lvtHeaderText&apos;]"/>
+			<item value="productcategory1"/>
+			<item value="name=&apos;dtlview_Support Start Date&apos;]"/>
+			<item value="name=&apos;dtlview_Support Start Date&apos;]&quot;"/>
+			<item value="productcategory"/>
+			<item value="orgname"/>
+			<item value="contInfop"/>
+			<item value="Contactorgname1"/>
+			<item value="user"/>
+			<item value="name=&apos;user_name&apos;]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="365"/>
+		<item key="DIALOG_Y_ORIGIN" value="204"/>
+	</section>
+</section>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Report Configuration]]>
+    </line>
+    <line>
+      <![CDATA[========CreateCampaign====START=====]]>
+    </line>
+    <line>
+      <![CDATA[========CreateCampaign=====END======]]>
+    </line>
+    <line>
+      <![CDATA[Report Backup]]>
+    </line>
+    <line>
+      <![CDATA[Report Configuration]]>
+    </line>
+    <line>
+      <![CDATA[========CampaignWithTypeAndStatus====START=====]]>
+    </line>
+    <line>
+      <![CDATA[========CampaignWithTypeAndStatus=====END======]]>
+    </line>
+    <line>
+      <![CDATA[========CreateCampaignWithExpectedCloseDate====START=====]]>
+    </line>
+    <line>
+      <![CDATA[========CreateCampaignWithExpectedCloseDate=====END======]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-11-19T10:00:00 IST" name="SuiteSmoke" finished-at="2025-11-19T10:00:35 IST" duration-ms="34815">
+    <groups>
+      <group name="Smoke">
+        <method signature="CreateCampaign.CreateCampaign()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" name="CreateCampaign" class="com.crm.CampaignTest.CreateCampaign"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-11-19T10:00:00 IST" name="Test" finished-at="2025-11-19T10:00:35 IST" duration-ms="34815">
+      <class name="com.crm.CampaignTest.CreateCampaign">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:00 IST" name="beforeSuite" finished-at="2025-11-19T10:00:00 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:00 IST" name="beforeClass" finished-at="2025-11-19T10:00:06 IST" duration-ms="6084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:06 IST" name="beforeMethod" finished-at="2025-11-19T10:00:07 IST" duration-ms="1213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CreateCampaign()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:07 IST" name="CreateCampaign" finished-at="2025-11-19T10:00:34 IST" duration-ms="26499" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========CreateCampaign====START=====]]>
+            </line>
+            <line>
+              <![CDATA[========CreateCampaign=====END======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateCampaign -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:34 IST" name="afterMethod" finished-at="2025-11-19T10:00:35 IST" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:35 IST" name="afterClass" finished-at="2025-11-19T10:00:35 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.crm.CampaignTest.CreateCampaign@1d2adfbe]" started-at="2025-11-19T10:00:35 IST" name="afterSuite" finished-at="2025-11-19T10:00:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.crm.CampaignTest.CreateCampaign -->
+    </test> <!-- Test -->
+  </suite> <!-- SuiteSmoke -->
+  <suite started-at="2025-11-19T10:00:35 IST" name="SuiteRegression" finished-at="2025-11-19T10:00:50 IST" duration-ms="15342">
+    <groups>
+      <group name="Regression">
+        <method signature="CreateCampaignTest.CampaignWithTypeAndStatus()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" name="CampaignWithTypeAndStatus" class="com.crm.CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.CreateCampaignWithExpectedCloseDate()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" name="CreateCampaignWithExpectedCloseDate" class="com.crm.CampaignTest.CreateCampaignTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-11-19T10:00:35 IST" name="Test" finished-at="2025-11-19T10:00:50 IST" duration-ms="15342">
+      <class name="com.crm.CampaignTest.CreateCampaignTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:35 IST" name="beforeClass" finished-at="2025-11-19T10:00:36 IST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:35 IST" name="beforeSuite" finished-at="2025-11-19T10:00:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:36 IST" name="beforeMethod" finished-at="2025-11-19T10:00:37 IST" duration-ms="991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CampaignWithTypeAndStatus()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:37 IST" name="CampaignWithTypeAndStatus" finished-at="2025-11-19T10:00:43 IST" duration-ms="5997" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========CampaignWithTypeAndStatus====START=====]]>
+            </line>
+            <line>
+              <![CDATA[========CampaignWithTypeAndStatus=====END======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CampaignWithTypeAndStatus -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:43 IST" name="afterMethod" finished-at="2025-11-19T10:00:44 IST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:44 IST" name="beforeMethod" finished-at="2025-11-19T10:00:45 IST" duration-ms="1795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CreateCampaignWithExpectedCloseDate()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:45 IST" name="CreateCampaignWithExpectedCloseDate" finished-at="2025-11-19T10:00:50 IST" duration-ms="4329" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========CreateCampaignWithExpectedCloseDate====START=====]]>
+            </line>
+            <line>
+              <![CDATA[========CreateCampaignWithExpectedCloseDate=====END======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateCampaignWithExpectedCloseDate -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:50 IST" name="afterMethod" finished-at="2025-11-19T10:00:50 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:50 IST" name="afterClass" finished-at="2025-11-19T10:00:50 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.crm.CampaignTest.CreateCampaignTest@7cc0cdad]" started-at="2025-11-19T10:00:50 IST" name="afterSuite" finished-at="2025-11-19T10:00:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.crm.CampaignTest.CreateCampaignTest -->
+    </test> <!-- Test -->
+  </suite> <!-- SuiteRegression -->
+</testng-results>

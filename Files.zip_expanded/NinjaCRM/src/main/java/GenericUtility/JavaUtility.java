@@ -1,0 +1,32 @@
+package GenericUtility;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Random;
+
+public class JavaUtility {
+	public int getRandomNum() {
+		Random r = new Random();
+		return r.nextInt(1000);
+		
+	}
+	
+	public String getCurrentDate() {
+		Date date=new Date();
+		SimpleDateFormat sim=new SimpleDateFormat("dd-MM-yyyy");
+		String currentDate=sim.format(date);
+		return currentDate;
+	}
+	
+	public String getRequiredFutureDate(int day) {
+		Date date=new Date();
+		SimpleDateFormat sim=new SimpleDateFormat("dd-MM-yyyy");
+		sim.format(date);		
+		Calendar cal=sim.getCalendar();
+		cal.add(Calendar.DAY_OF_MONTH, day);
+		String reqdate = sim.format(cal.getTime());
+		return reqdate;
+	}
+	
+}

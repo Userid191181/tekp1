@@ -1,0 +1,22 @@
+package Test;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ExcelFile {
+
+	public static void main(String[] args) {
+
+WebDriver driver=new FirefoxDriver();
+
+FileInputStream fis=new FileInputStream("./src/test/resources/Excel.xlsx");
+Workbook wb=new WorkbookFactory.create(fis);
+
+	}
+
+}

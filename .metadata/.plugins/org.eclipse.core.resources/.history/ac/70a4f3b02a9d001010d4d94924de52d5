@@ -1,0 +1,25 @@
+package Test;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+
+public class JDBC_1 {
+
+	public static void main(String[] args) throws SQLException {
+//		Step1: load/register db driver
+//		We have class called DriverManager, it is coming from java.sql package
+		Driver driverref=new Driver();
+		DriverManager.registerDriver(driverref); //Registration is Done. registerDriver is a static method.
+		//To connect to mySQLDB, we nned to load or Register the Driver, the driver is mysqlDriver 
+//	Step2: connect to db
+		DriverManager.getConnection(null); //Again we use DriverManager to get connection
+//	Step3: create sql statement 
+//	Step4: execute select query and get result
+//	Step5: close the connection
+
+
+	}
+
+}

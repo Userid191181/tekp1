@@ -1,0 +1,20 @@
+package SupplyChainMgmtScripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Dummy {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "./SeleniumJarFiles/msedgedriver.exe");		
+		WebDriver driver=new EdgeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("phones");
+		driver.findElement(By.xpath("//span[@class='a-size-base a-color-base' and contains(text(),'Android 13.0')]")).click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+	}
+
+}

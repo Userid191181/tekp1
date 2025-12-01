@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="26" passed="23" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Depsnds on contacts]]>
+    </line>
+    <line>
+      <![CDATA[Depsnds on contacts for calls]]>
+    </line>
+    <line>
+      <![CDATA[Create MEthod]]>
+    </line>
+    <line>
+      <![CDATA[EditMEthod]]>
+    </line>
+    <line>
+      <![CDATA[sales are 191]]>
+    </line>
+    <line>
+      <![CDATA[sales3 are 193]]>
+    </line>
+    <line>
+      <![CDATA[Test1]]>
+    </line>
+    <line>
+      <![CDATA[Test2]]>
+    </line>
+    <line>
+      <![CDATA[Test3]]>
+    </line>
+    <line>
+      <![CDATA[Test4]]>
+    </line>
+    <line>
+      <![CDATA[Test5]]>
+    </line>
+    <line>
+      <![CDATA[Single]]>
+    </line>
+    <line>
+      <![CDATA[helo]]>
+    </line>
+    <line>
+      <![CDATA[ModifyMEthod]]>
+    </line>
+    <line>
+      <![CDATA[ModifyMEthod]]>
+    </line>
+    <line>
+      <![CDATA[ModifyMEthod]]>
+    </line>
+    <line>
+      <![CDATA[Create MEthod]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-09-11T18:24:30 IST" name="Suite" finished-at="2025-09-11T18:24:44 IST" duration-ms="14263">
+    <groups>
+      <group name="sample">
+        <method signature="TestNG6.T1()[pri:0, instance:TestNG.TestNG6@2362f559]" name="T1" class="TestNG.TestNG6"/>
+        <method signature="TestNG6.T2()[pri:0, instance:TestNG.TestNG6@2362f559]" name="T2" class="TestNG.TestNG6"/>
+        <method signature="TestNG6.T3()[pri:0, instance:TestNG.TestNG6@2362f559]" name="T3" class="TestNG.TestNG6"/>
+        <method signature="TestNG6.T4()[pri:0, instance:TestNG.TestNG6@2362f559]" name="T4" class="TestNG.TestNG6"/>
+        <method signature="TestNG6.T5()[pri:0, instance:TestNG.TestNG6@2362f559]" name="T5" class="TestNG.TestNG6"/>
+      </group> <!-- sample -->
+    </groups>
+    <test started-at="2025-09-11T18:24:30 IST" name="Test" finished-at="2025-09-11T18:24:44 IST" duration-ms="14263">
+      <class name="TestNG.TestNG4">
+        <test-method signature="Chat()[pri:0, instance:TestNG.TestNG4@6ad82709]" started-at="2025-09-11T18:24:30 IST" name="Chat" finished-at="2025-09-11T18:24:30 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chat -->
+        <test-method signature="Contact()[pri:0, instance:TestNG.TestNG4@6ad82709]" started-at="2025-09-11T18:24:30 IST" name="Contact" finished-at="2025-09-11T18:24:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contact -->
+      </class> <!-- TestNG.TestNG4 -->
+      <class name="TestNG.BaseClassDriver">
+        <test-method is-config="true" signature="Preconditions()[pri:0, instance:TestNG.BaseClassDriver@65e98b1c]" started-at="2025-09-11T18:24:44 IST" name="Preconditions" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Preconditions -->
+        <test-method signature="Signup()[pri:0, instance:TestNG.BaseClassDriver@65e98b1c]" started-at="2025-09-11T18:24:44 IST" name="Signup" finished-at="2025-09-11T18:24:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signup -->
+        <test-method is-config="true" signature="Postconditions()[pri:0, instance:TestNG.BaseClassDriver@65e98b1c]" started-at="2025-09-11T18:24:44 IST" name="Postconditions" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postconditions -->
+      </class> <!-- TestNG.BaseClassDriver -->
+      <class name="TestNG.TestNG5">
+        <test-method signature="Contacts()[pri:0, instance:TestNG.TestNG5@8297b3a]" started-at="2025-09-11T18:24:30 IST" name="Contacts" finished-at="2025-09-11T18:24:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Depsnds on contacts]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Contacts -->
+        <test-method signature="CAlls()[pri:0, instance:TestNG.TestNG5@8297b3a]" started-at="2025-09-11T18:24:30 IST" name="CAlls" finished-at="2025-09-11T18:24:30 IST" depends-on-methods="TestNG.TestNG5.Contacts" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Depsnds on contacts for calls]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CAlls -->
+        <test-method signature="Sales1()[pri:0, instance:TestNG.TestNG5@8297b3a]" started-at="2025-09-11T18:24:44 IST" name="Sales1" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[sales are 191]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Sales1 -->
+        <test-method signature="Sales3()[pri:0, instance:TestNG.TestNG5@8297b3a]" started-at="2025-09-11T18:24:44 IST" name="Sales3" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[sales3 are 193]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Sales3 -->
+      </class> <!-- TestNG.TestNG5 -->
+      <class name="TestNG.TestNG2">
+        <test-method signature="CreateMethod()[pri:0, instance:TestNG.TestNG2@1f2586d6]" started-at="2025-09-11T18:24:30 IST" name="CreateMethod" finished-at="2025-09-11T18:24:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Create MEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateMethod -->
+      </class> <!-- TestNG.TestNG2 -->
+      <class name="TestNG.Annotations">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="login" finished-at="2025-09-11T18:24:44 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Loginusr()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="Loginusr" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginusr -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="logout" finished-at="2025-09-11T18:24:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="Edituser()[pri:1, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="Edituser" finished-at="2025-09-11T18:24:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Edituser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="login" finished-at="2025-09-11T18:24:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="logout" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="login" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Deleteuser()[pri:2, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="Deleteuser" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteuser -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestNG.Annotations@385c9627]" started-at="2025-09-11T18:24:44 IST" name="logout" finished-at="2025-09-11T18:24:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- TestNG.Annotations -->
+      <class name="TestNG.TestNG3">
+        <test-method signature="EditMethod()[pri:0, instance:TestNG.TestNG3@10683d9d]" started-at="2025-09-11T18:24:30 IST" name="EditMethod" finished-at="2025-09-11T18:24:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[EditMEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- EditMethod -->
+        <test-method signature="ModifyMethod()[pri:1, instance:TestNG.TestNG3@10683d9d]" started-at="2025-09-11T18:24:44 IST" name="ModifyMethod" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ModifyMEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ModifyMethod -->
+        <test-method signature="ModifyMethod()[pri:1, instance:TestNG.TestNG3@10683d9d]" started-at="2025-09-11T18:24:44 IST" name="ModifyMethod" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ModifyMEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ModifyMethod -->
+        <test-method signature="ModifyMethod()[pri:1, instance:TestNG.TestNG3@10683d9d]" started-at="2025-09-11T18:24:44 IST" name="ModifyMethod" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ModifyMEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ModifyMethod -->
+        <test-method signature="CreateMethod()[pri:2, instance:TestNG.TestNG3@10683d9d]" started-at="2025-09-11T18:24:44 IST" name="CreateMethod" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Create MEthod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateMethod -->
+      </class> <!-- TestNG.TestNG3 -->
+      <class name="TestNG.TestNG1">
+        <test-method signature="test()[pri:0, instance:TestNG.TestNG1@5542c4ed]" started-at="2025-09-11T18:24:44 IST" name="test" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[helo]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- TestNG.TestNG1 -->
+      <class name="TestNG.LoginToFB">
+        <test-method signature="LoginFB()[pri:0, instance:TestNG.LoginToFB@61322f9d]" started-at="2025-09-11T18:24:30 IST" name="LoginFB" finished-at="2025-09-11T18:24:44 IST" duration-ms="14109" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.81)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6475bf7e86f86260e7bc730d2d62ad7, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54448/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6475bf7e86f86260e7bc730d2d62ad7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.81)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6475bf7e86f86260e7bc730d2d62ad7, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54448/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6475bf7e86f86260e7bc730d2d62ad7
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at TestNG.LoginToFB.LoginFB(LoginToFB.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFB -->
+      </class> <!-- TestNG.LoginToFB -->
+      <class name="TestNG.TestNG6">
+        <test-method signature="T1()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="T1" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- T1 -->
+        <test-method signature="T2()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="T2" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- T2 -->
+        <test-method signature="T3()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="T3" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- T3 -->
+        <test-method signature="T4()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="T4" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- T4 -->
+        <test-method signature="T5()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="T5" finished-at="2025-09-11T18:24:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- T5 -->
+        <test-method signature="Single()[pri:0, instance:TestNG.TestNG6@2362f559]" started-at="2025-09-11T18:24:44 IST" name="Single" depends-on-groups="sample" finished-at="2025-09-11T18:24:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Single]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Single -->
+      </class> <!-- TestNG.TestNG6 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

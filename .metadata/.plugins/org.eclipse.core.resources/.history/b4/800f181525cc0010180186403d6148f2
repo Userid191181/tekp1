@@ -1,0 +1,12 @@
+package BrowserStack;
+
+import org.testng.annotations.Test;
+
+public class BrowserStackTest {
+
+	@Test
+	public void BrowserStackTest()
+	{
+		
+	}
+}

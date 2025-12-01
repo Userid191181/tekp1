@@ -1,0 +1,45 @@
+package Test;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class DatePicker {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demoapps.qspiders.com/");
+		driver.findElement(By.xpath("//p[text()='Experience the seamless interactions and responsive designs']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//section[text()='Date & Time Picker']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//section[text()='Date & Time Picker']/../..//section[text()='Time Picker']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[text()='Time Picker Clock']")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.elementToBeClickable(
+		By.xpath("//div[@class='MuiFormControl-root MuiTextField-root css-165mck1']//input"))).click();	
+				
+		/**	
+	  	Actions act=new Actions(driver);
+		WebElement clickAndHold=driver.findElement(By.xpath("//div[contains(@class,'MuiClockPointer-root') and contains(@style,'rotateZ(0deg)')]"));
+		WebElement drop=driver.findElement(By.xpath("//div[contains(@class,'MuiClockPointer-root') and contains(@style,'rotateZ(120deg)')]"));
+		act.dragAndDrop(clickAndHold, drop).perform(); 
+		**/
+		WebElement a=driver.findElement(By.xpath("//div[contains(@class,'MuiClockPointer-root') and contains(@style,'rotateZ(0deg)')]"));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait1.until(ExpectedConditions.visibilityOf(a)).click();
+		//driver.findElement(By.xpath("//div[contains(@class,'MuiClockPointer-root') and contains(@style,'rotateZ(0deg)')]")).click();
+		
+		
+	}
+
+}

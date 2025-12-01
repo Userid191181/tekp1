@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MapTest1.java&apos; to &apos;GitHub/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Map&apos;&#x0D;&#x0A;- Destination element: &apos;GitHub/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;src.MapTest1.java&apos;" description="Copy compilation unit" destination="=GitHub/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;" element1="/src&lt;src{MapTest1.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1763012441606" units="1" version="1.0"/>
+</session>

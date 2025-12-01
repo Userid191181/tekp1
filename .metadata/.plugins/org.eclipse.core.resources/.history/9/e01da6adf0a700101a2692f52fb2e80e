@@ -1,0 +1,58 @@
+package Test;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File;
+import com.mysql.jdbc.Driver;
+
+public class Practise1 {
+
+	public static void main(String[] args) throws InterruptedException, SQLException, EncryptedDocumentException, IOException {
+		WebDriver driver=new ChromeDriver();
+		WebElement ele=driver.findElement(By.id(""));
+
+		Driver driref=new Driver(); //create driver ref
+		DriverManager.registerDriver(driref); //creating driver reference to Driver manager
+		Connection con=getConnection("url","id","pwd"); //connecting to db using jdbc(url=jdbc:mysql:10.10.10.10:port/project
+		Statement s=con.createStatement(); //preparing the query
+		ResultSet r= s.executeQuery("query"); //executing select query select * from tablename where condition
+		con.close(); //closing connection	
+	
+	
+	}
+
+
+}

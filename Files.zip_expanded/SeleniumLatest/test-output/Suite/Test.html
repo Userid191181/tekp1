@@ -1,0 +1,399 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 11 18:24:30 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14263 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.LoginToFB.LoginFB()'><b>LoginFB</b><br>Test class: TestNG.LoginToFB</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.81)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6475bf7e86f86260e7bc730d2d62ad7, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54448/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6475bf7e86f86260e7bc730d2d62ad7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at TestNG.LoginToFB.LoginFB(LoginToFB.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1049590050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1049590050'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.81)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6475bf7e86f86260e7bc730d2d62ad7, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54448/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6475bf7e86f86260e7bc730d2d62ad7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at TestNG.LoginToFB.LoginFB(LoginToFB.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>14</td>
+<td>TestNG.LoginToFB@61322f9d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestNG3.ModifyMethod()'><b>ModifyMethod</b><br>Test class: TestNG.TestNG3<br/>
+<a href="#Output-1961129028" onClick='toggleBox("Output-1961129028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1961129028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1961129028">
+ModifyMEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG3@10683d9d</td></tr>
+<tr>
+<td title='TestNG.TestNG6.T4()'><b>T4</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-2118096382" onClick='toggleBox("Output-2118096382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2118096382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2118096382">
+Test4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG6.T3()'><b>T3</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-616412281" onClick='toggleBox("Output-616412281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-616412281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-616412281">
+Test3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG5.Sales1()'><b>Sales1</b><br>Test class: TestNG.TestNG5<br/>
+<a href="#Output-2086068243" onClick='toggleBox("Output-2086068243", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2086068243" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2086068243">
+sales are 191<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG5@8297b3a</td></tr>
+<tr>
+<td title='TestNG.TestNG2.CreateMethod()'><b>CreateMethod</b><br>Test class: TestNG.TestNG2<br/>
+<a href="#Output-1910438136" onClick='toggleBox("Output-1910438136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1910438136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1910438136">
+Create MEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG2@1f2586d6</td></tr>
+<tr>
+<td title='TestNG.TestNG5.CAlls()'><b>CAlls</b><br>Test class: TestNG.TestNG5<br/>
+<a href="#Output-1006227006" onClick='toggleBox("Output-1006227006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1006227006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1006227006">
+Depsnds on contacts for calls<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG5@8297b3a</td></tr>
+<tr>
+<td title='TestNG.TestNG6.T2()'><b>T2</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-1115381650" onClick='toggleBox("Output-1115381650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1115381650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1115381650">
+Test2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG3.CreateMethod()'><b>CreateMethod</b><br>Test class: TestNG.TestNG3<br/>
+<a href="#Output-1506938939" onClick='toggleBox("Output-1506938939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1506938939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506938939">
+Create MEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG3@10683d9d</td></tr>
+<tr>
+<td title='TestNG.BaseClassDriver.Signup()'><b>Signup</b><br>Test class: TestNG.BaseClassDriver</td>
+<td></td>
+<td>0</td>
+<td>TestNG.BaseClassDriver@65e98b1c</td></tr>
+<tr>
+<td title='TestNG.TestNG4.Contact()'><b>Contact</b><br>Test class: TestNG.TestNG4</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG4@6ad82709</td></tr>
+<tr>
+<td title='TestNG.TestNG5.Sales3()'><b>Sales3</b><br>Test class: TestNG.TestNG5<br/>
+<a href="#Output-1070194629" onClick='toggleBox("Output-1070194629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1070194629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1070194629">
+sales3 are 193<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG5@8297b3a</td></tr>
+<tr>
+<td title='TestNG.Annotations.Loginusr()'><b>Loginusr</b><br>Test class: TestNG.Annotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Annotations@385c9627</td></tr>
+<tr>
+<td title='TestNG.TestNG6.T5()'><b>T5</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-878861517" onClick='toggleBox("Output-878861517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878861517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878861517">
+Test5<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG1.test()'><b>test</b><br>Test class: TestNG.TestNG1<br/>
+<a href="#Output-15892131" onClick='toggleBox("Output-15892131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15892131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15892131">
+helo<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG1@5542c4ed</td></tr>
+<tr>
+<td title='TestNG.TestNG5.Contacts()'><b>Contacts</b><br>Test class: TestNG.TestNG5<br/>
+<a href="#Output-1606286799" onClick='toggleBox("Output-1606286799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1606286799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1606286799">
+Depsnds on contacts<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG5@8297b3a</td></tr>
+<tr>
+<td title='TestNG.Annotations.Edituser()'><b>Edituser</b><br>Test class: TestNG.Annotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Annotations@385c9627</td></tr>
+<tr>
+<td title='TestNG.Annotations.Deleteuser()'><b>Deleteuser</b><br>Test class: TestNG.Annotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.Annotations@385c9627</td></tr>
+<tr>
+<td title='TestNG.TestNG3.EditMethod()'><b>EditMethod</b><br>Test class: TestNG.TestNG3<br/>
+<a href="#Output-1296456465" onClick='toggleBox("Output-1296456465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1296456465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1296456465">
+EditMEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG3@10683d9d</td></tr>
+<tr>
+<td title='TestNG.TestNG3.ModifyMethod()'><b>ModifyMethod</b><br>Test class: TestNG.TestNG3<br/>
+<a href="#Output-1483145520" onClick='toggleBox("Output-1483145520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483145520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483145520">
+ModifyMEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG3@10683d9d</td></tr>
+<tr>
+<td title='TestNG.TestNG3.ModifyMethod()'><b>ModifyMethod</b><br>Test class: TestNG.TestNG3<br/>
+<a href="#Output-163385254" onClick='toggleBox("Output-163385254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-163385254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-163385254">
+ModifyMEthod<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG3@10683d9d</td></tr>
+<tr>
+<td title='TestNG.TestNG6.Single()'><b>Single</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-864248990" onClick='toggleBox("Output-864248990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-864248990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-864248990">
+Single<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG6.T1()'><b>T1</b><br>Test class: TestNG.TestNG6<br/>
+<a href="#Output-1863100050" onClick='toggleBox("Output-1863100050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1863100050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1863100050">
+Test1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG6@2362f559</td></tr>
+<tr>
+<td title='TestNG.TestNG4.Chat()'><b>Chat</b><br>Test class: TestNG.TestNG4</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestNG4@6ad82709</td></tr>
+</table><p>
+</body>
+</html>

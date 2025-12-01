@@ -1,0 +1,64 @@
+package Test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class PropertyFile {
+
+public static void main(String[] args) throws IOException, InterruptedException {
+
+FileInputStream fis=new FileInputStream("./src/test/resources/commonData.properties");
+Properties pobj=new Properties();
+pobj.load(fis);
+String BROWSER=pobj.getProperty("browser");
+String URL=pobj.getProperty("url");
+String ID=pobj.getProperty("username");
+String PWD=pobj.getProperty("password");
+
+
+WebDriver driver=null;
+if(BROWSER.equals("chrome"))
+{
+	driver=new ChromeDriver();
+}
+else if(BROWSER.equals("edge"))
+{
+	driver=new EdgeDriver();
+}
+else if(BROWSER.equals("firefox"))
+{
+	driver = new FirefoxDriver();
+}
+
+driver.get(URL);
+Thread.sleep(3000);
+driver.findElement(By.name("user_name")).sendKeys(ID);
+driver.findElement(By.name("user_password")).sendKeys(PWD);
+driver.findElement(By.xpath("//input[@type='submit']")).click();
+
+//Reading data from Excel
+FileInputStream efis=new FileInputStream("./src/test/resources/Excel.xlsx");
+Workbook wb = WorkbookFactory.create(efis);
+Sheet sh=wb.getSheet("Org");
+Row row=sh.getRow(1);
+
+
+
+
+
+
+
+}
+}

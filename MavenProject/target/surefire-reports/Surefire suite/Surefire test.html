@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 17 17:25:10 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106717 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.ContactTest.CreateContactWithOrgTest.CreateConatcWithOrg()'><b>CreateConatcWithOrg</b><br>Test class: com.crm.ContactTest.CreateContactWithOrgTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Organization Name Already Exists!}
+  (Session info: chrome=142.0.7444.135): Organization Name Already Exists!
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e68cd97f78b7eb486cfdec6a9c0746c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63745}, goog:processID: 2720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63745/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e68cd97f78b7eb486cfdec6a9c0746c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestFailure(ListenerImplementationClass.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace981012032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace981012032'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Organization Name Already Exists!}
+  (Session info: chrome=142.0.7444.135): Organization Name Already Exists!
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e68cd97f78b7eb486cfdec6a9c0746c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63745}, goog:processID: 2720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63745/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e68cd97f78b7eb486cfdec6a9c0746c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestFailure(ListenerImplementationClass.java:72)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>21</td>
+<td>com.crm.ContactTest.CreateContactWithOrgTest@72f926e6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='PractiseTestNG.Test2.ddd()'><b>ddd</b><br>Test class: PractiseTestNG.Test2<br>Parameters: cc, dd<br/>
+<a href="#Output-1094446968" onClick='toggleBox("Output-1094446968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1094446968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1094446968">
+========ddd====START=====<br/>
+========ddd=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test2@27ce24aa</td></tr>
+<tr>
+<td title='com.crm.OrgTest.CreateOrgTest.CreateOrgWithPhoneNumber()'><b>CreateOrgWithPhoneNumber</b><br>Test class: com.crm.OrgTest.CreateOrgTest<br/>
+<a href="#Output-440815523" onClick='toggleBox("Output-440815523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-440815523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-440815523">
+========CreateOrgWithPhoneNumber====START=====<br/>
+========CreateOrgWithPhoneNumber=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.crm.OrgTest.CreateOrgTest@3daa422a</td></tr>
+<tr>
+<td title='com.crm.OrgTest.CreateOrgTest.CreateOrgWithIndustriesTest()'><b>CreateOrgWithIndustriesTest</b><br>Test class: com.crm.OrgTest.CreateOrgTest<br/>
+<a href="#Output-1661728387" onClick='toggleBox("Output-1661728387", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661728387" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661728387">
+========CreateOrgWithIndustriesTest====START=====<br/>
+========CreateOrgWithIndustriesTest=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.crm.OrgTest.CreateOrgTest@3daa422a</td></tr>
+<tr>
+<td title='PractiseTestNG.Test2.ddd()'><b>ddd</b><br>Test class: PractiseTestNG.Test2<br>Parameters: aa, bb<br/>
+<a href="#Output-1063494931" onClick='toggleBox("Output-1063494931", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1063494931" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1063494931">
+========ddd====START=====<br/>
+========ddd=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test2@27ce24aa</td></tr>
+<tr>
+<td title='com.crm.ContactTest.CreateContactTest.CreateContactWithSupportDateTest()'><b>CreateContactWithSupportDateTest</b><br>Test class: com.crm.ContactTest.CreateContactTest<br/>
+<a href="#Output-373682836" onClick='toggleBox("Output-373682836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-373682836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-373682836">
+========CreateContactWithSupportDateTest====START=====<br/>
+========CreateContactWithSupportDateTest=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.crm.ContactTest.CreateContactTest@39529185</td></tr>
+<tr>
+<td title='PractiseTestNG.Test2.ddd()'><b>ddd</b><br>Test class: PractiseTestNG.Test2<br>Parameters: ee, ff<br/>
+<a href="#Output-1714961449" onClick='toggleBox("Output-1714961449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714961449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714961449">
+========ddd====START=====<br/>
+========ddd=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test2@27ce24aa</td></tr>
+<tr>
+<td title='com.crm.OrgTest.CreateOrgTest.CreateOrgTest()'><b>CreateOrgTest</b><br>Test class: com.crm.OrgTest.CreateOrgTest<br/>
+<a href="#Output-1426974392" onClick='toggleBox("Output-1426974392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1426974392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1426974392">
+========CreateOrgTest====START=====<br/>
+========CreateOrgTest=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.crm.OrgTest.CreateOrgTest@3daa422a</td></tr>
+<tr>
+<td title='PractiseTestNG.Test1.sss()'><b>sss</b><br>Test class: PractiseTestNG.Test1<br>Parameters: ddd, sss<br/>
+<a href="#Output-913902572" onClick='toggleBox("Output-913902572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-913902572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-913902572">
+========sss====START=====<br/>
+========sss=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test1@1cbbffcd</td></tr>
+<tr>
+<td title='PractiseTestNG.Test1.sss()'><b>sss</b><br>Test class: PractiseTestNG.Test1<br>Parameters: ddd, sss<br/>
+<a href="#Output-1176254217" onClick='toggleBox("Output-1176254217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1176254217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1176254217">
+========sss====START=====<br/>
+========sss=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test1@1cbbffcd</td></tr>
+<tr>
+<td title='com.crm.ContactTest.CreateContactTest.CreateContactTest()'><b>CreateContactTest</b><br>Test class: com.crm.ContactTest.CreateContactTest<br/>
+<a href="#Output-765420745" onClick='toggleBox("Output-765420745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-765420745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-765420745">
+========CreateContactTest====START=====<br/>
+========CreateContactTest=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.crm.ContactTest.CreateContactTest@39529185</td></tr>
+<tr>
+<td title='PractiseTestNG.Test1.sss()'><b>sss</b><br>Test class: PractiseTestNG.Test1<br>Parameters: ddd, sss<br/>
+<a href="#Output-1089407736" onClick='toggleBox("Output-1089407736", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1089407736" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1089407736">
+========sss====START=====<br/>
+========sss=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.Test1@1cbbffcd</td></tr>
+<tr>
+<td title='com.crm.ContactTest.CreateContactTest.CreateContactWithOrgTest()'><b>CreateContactWithOrgTest</b><br>Test class: com.crm.ContactTest.CreateContactTest<br/>
+<a href="#Output-1221759982" onClick='toggleBox("Output-1221759982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1221759982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1221759982">
+========CreateContactWithOrgTest====START=====<br/>
+========CreateContactWithOrgTest=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.crm.ContactTest.CreateContactTest@39529185</td></tr>
+<tr>
+<td title='PractiseTestNG.SampleTest.Aemo1test()'><b>Aemo1test</b><br>Test class: PractiseTestNG.SampleTest<br/>
+<a href="#Output-500096147" onClick='toggleBox("Output-500096147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500096147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500096147">
+========Aemo1test====START=====<br/>
+========Aemo1test=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.SampleTest@31c88ec8</td></tr>
+<tr>
+<td title='PractiseTestNG.SampleTest.Demo1()'><b>Demo1</b><br>Test class: PractiseTestNG.SampleTest<br/>
+<a href="#Output-1902216702" onClick='toggleBox("Output-1902216702", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902216702" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902216702">
+========Demo1====START=====<br/>
+========Demo1=====END======<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PractiseTestNG.SampleTest@31c88ec8</td></tr>
+</table><p>
+</body>
+</html>
